@@ -11,11 +11,10 @@ public class PowerManager : MonoBehaviour
     public Collider player;
     private List<Power> powersInventory = new List<Power> { };
 
-    public bool SetPower()
+    public bool SetPower(Power power)
     {
         try
         {
-            var power = GetRandomPower();
             powersInventory.Add(power);
             Debug.Log(power);
 

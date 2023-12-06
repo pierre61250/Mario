@@ -4,6 +4,7 @@ using UnityEngine;
 public class PowerUpBlock : MonoBehaviour
 {
     public PowerManager powerManager;
+    public Power power;
 
     private void OnTriggerEnter(Collider entity)
     {
@@ -11,7 +12,7 @@ public class PowerUpBlock : MonoBehaviour
 
         if (isPlayer)
         {
-            if (powerManager.SetPower())
+            if (powerManager.SetPower(power))
             {
                 Destroy(this.gameObject);
             }
