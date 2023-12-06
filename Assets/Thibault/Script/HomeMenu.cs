@@ -23,7 +23,7 @@ public class HomeMenu : MonoBehaviour
     }
 
     public void Replay() {
-    Debug.Log("Play");
+        Debug.Log("Play");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
