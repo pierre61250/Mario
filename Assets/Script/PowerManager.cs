@@ -65,7 +65,7 @@ public class PowerManager : MonoBehaviour
 
     private IEnumerator RemovePower()
     {
-        yield return new WaitForSeconds(15.0f);
+        yield return new WaitForSeconds(30.0f);
         Debug.Log("Power remove");
         int nbValues = powersInventory.Count(n => n == powersInventory[0]);
         Debug.Log(nbValues);
@@ -97,7 +97,7 @@ public class PowerManager : MonoBehaviour
     {
         if (disable)
         {
-            thirdPersonController.SprintSpeed = 5.335f;
+            thirdPersonController.SprintSpeed = 10f;
         }
         else
         {
@@ -128,8 +128,8 @@ public class PowerManager : MonoBehaviour
         }
         else
         {
-            player.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            characterController.center = new Vector3(0f, 1.01f, 0.08f);
+            player.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+            characterController.center = new Vector3(0f, 0.99f, 0.08f);
         }
     }
 
