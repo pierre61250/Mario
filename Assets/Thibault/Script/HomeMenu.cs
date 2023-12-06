@@ -24,7 +24,7 @@ public class HomeMenu : MonoBehaviour
 
     public void Replay() {
         Debug.Log("Play");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("Playground");
     }
 
     public void QuitGame() {

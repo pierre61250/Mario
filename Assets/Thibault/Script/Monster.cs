@@ -9,7 +9,7 @@ public class Monster : MonoBehaviour
          {
              if (collision.gameObject.CompareTag("Player"))
              {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene("Loosing");
              }
    }
 }
