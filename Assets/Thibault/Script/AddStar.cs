@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class AddStar : MonoBehaviour
 {
       public static int collisionsCount = 0;
       public TextMeshProUGUI collisionsText; // Assure-toi de faire référence à ton objet Text UI dans l'éditeur Unity
-
 
       private void OnTriggerEnter(Collider collision)
       {
@@ -16,6 +16,10 @@ public class AddStar : MonoBehaviour
               AddStar.collisionsCount++;
               UpdateCollisionsText(); // Mets à jour le texte à chaque collision
               Destroy(gameObject);
+              if( collisionsCount == 5 ) {
+                collisionsCount = 0;
+                  SceneManager.LoadScene("Ending");
+              }
           }
       }
 

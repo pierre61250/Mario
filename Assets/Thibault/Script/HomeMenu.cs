@@ -18,7 +18,13 @@ public class HomeMenu : MonoBehaviour
     }
 
     public void PlayGame() {
+    Debug.Log("Play");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Replay() {
+    Debug.Log("Play");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void QuitGame() {
