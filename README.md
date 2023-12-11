@@ -2,7 +2,7 @@
     Mario
 </h1>
 <p align="center">
-    Permet de gérer une TodoList avec une base Mongo DB<br><br>
+    Projet Unity MDS - Mario Remastered<br><br>
     <img alt="Unity" src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white">
     <img alt="C Sharp" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white">
 </p>
