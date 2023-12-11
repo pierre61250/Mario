@@ -1,2 +1,4 @@
 # Mario
-Projet Unity MDS - Mario Remastered
+Le chateau : Pierre
+Les boxes magiques : Thibault
+Le personnage : Alseny
